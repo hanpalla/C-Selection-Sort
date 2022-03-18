@@ -32,13 +32,11 @@ int main(){
 
     // Perulangan ganda selection sort
     int i, j, minimum;
-    
     printf("\nProses Pengurutan Array.\n");
-    // Untuk melihat hasil setiap terjadinya perulangan
-    // Tidak peduli apakah terjadi pertukaran tempat atau tidak
-    cetak(arr, n);
-        
     for(i = 0; i < n-1; i++){
+        // Untuk melihat hasil setiap terjadinya perulangan
+        // Tidak peduli apakah terjadi pertukaran tempat atau tidak
+        cetak(arr, n);
         minimum = i;
         for(j = i + 1; j < n; j++){
             if(arr[j] < arr[minimum])
