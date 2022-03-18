@@ -32,7 +32,12 @@ int main(){
 
     // Perulangan ganda selection sort
     int i, j, minimum;
+    
     printf("\nProses Pengurutan Array.\n");
+    // Untuk melihat hasil setiap terjadinya perulangan
+    // Tidak peduli apakah terjadi pertukaran tempat atau tidak
+    cetak(arr, n);
+        
     for(i = 0; i < n-1; i++){
         minimum = i;
         for(j = i + 1; j < n; j++){
@@ -43,11 +48,6 @@ int main(){
         int temp = arr[minimum];
         arr[minimum] = arr[i];
         arr[i] = temp;
-        
-        // Untuk melihat hasil setiap terjadinya perulangan
-        // Tidak peduli apakah terjadi pertukaran tempat atau tidak
-        cetak(arr, n);
-        
     }
 
     // Pencetakan array yang nilainya sudah diurutkan
